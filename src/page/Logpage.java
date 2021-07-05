@@ -40,18 +40,19 @@ public class Logpage {
 		
 	}
 	public void login(String uname, String pass) {
-		test = report.startTest("Login Test Case");
+		/*test = report.startTest("Login Test Case");
 		WebDriverWait wait= new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.elementToBeClickable(UserName));
+		wait.until(ExpectedConditions.elementToBeClickable(UserName));*/
 		UserName.sendKeys(uname);
-		test.log(LogStatus.PASS, "Successfully entered the user name");
+		/*test.log(LogStatus.PASS, "Successfully entered the user name");*/
 		
 		Password.sendKeys(pass);
-		test.log(LogStatus.PASS, "Successfully entered the password");
+		/*test.log(LogStatus.PASS, "Successfully entered the password");*/
 		Login.click();
-		test.log(LogStatus.PASS, "Successfully clicked on the Login link");
+		/*test.log(LogStatus.PASS, "Successfully clicked on the Login link");*/
 
-		
+		String Homepagetitle = driver.getTitle();
+		System.out.println("Homepage title is" +Homepagetitle);
 	}
 			
 

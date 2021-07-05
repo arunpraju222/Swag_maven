@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.Logtest" hash-for-method="Login2">Login2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.Logtest" hash-for-method="addtocart">addtocart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.Logtest" hash-for-method="cart">cart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,6 +140,20 @@
                   <a name="Login2">
                   </a> <!-- Login2 -->
                   <span class="method-name">Login2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addtocart">
+                  </a> <!-- addtocart -->
+                  <span class="method-name">addtocart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cart">
+                  </a> <!-- cart -->
+                  <span class="method-name">cart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login2')
 data.setCell(0, 2, 'test.Logtest')
-data.setCell(0, 3, 785);
+data.setCell(0, 3, 376);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addtocart')
+data.setCell(1, 2, 'test.Logtest')
+data.setCell(1, 3, 148);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cart')
+data.setCell(2, 2, 'test.Logtest')
+data.setCell(2, 3, 147);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 785 ms</span>
+              <span class="suite-total-time">Total running time: 671 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,18 +254,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.Logtest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Login2</span>
-                <span class="method-start">1713 ms</span>
+                <span class="method-start">1757 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="test-method">
+                <span class="method-name">addtocart</span>
+                <span class="method-start">2137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cart</span>
+                <span class="method-start">2287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">2502 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">2435 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

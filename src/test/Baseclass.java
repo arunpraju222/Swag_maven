@@ -10,7 +10,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -25,7 +27,7 @@ public class Baseclass {
 	XSSFWorkbook wbook;
     XSSFSheet sheet;
 	
-	@BeforeMethod
+	@BeforeTest
 		public void setup() throws IOException {
 			
 			System.setProperty("webdriver.chrome.driver", "chromedriver");
@@ -42,7 +44,7 @@ public class Baseclass {
 		   
 		    sheet = wbook.getSheetAt(0);
 			}
-			@AfterMethod
+			@AfterTest
 			public void teardown() {
 				report.endTest(test);
 				report.flush();
